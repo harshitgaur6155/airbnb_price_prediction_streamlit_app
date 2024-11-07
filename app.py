@@ -30,7 +30,8 @@ def load_data():
     input_df = pd.DataFrame()
     for link in listing_links:
         city_df = pd.read_csv(filepath_or_buffer = link, header = 0)
-        input_df = input_df.append(city_df)
+        # input_df = input_df.append(city_df)
+        input_df = pd.concat([input_df, city_df], ignore_index=True)
     df = input_df[features]
     df['price'] = df['price'].str.replace(',', '')
     df['price'] = df['price'].str.replace('$', '')
