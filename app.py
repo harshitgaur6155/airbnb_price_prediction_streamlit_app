@@ -19,8 +19,10 @@ features = ['accommodates', 'availability_365', 'bedrooms', 'host_identity_verif
 'room_type', 'price', 'latitude', 'longitude']
 
 listing_links = [
-    'http://data.insideairbnb.com/united-states/ma/boston/2022-12-21/data/listings.csv.gz',
-    'http://data.insideairbnb.com/united-states/ma/cambridge/2022-12-29/data/listings.csv.gz'
+    # 'http://data.insideairbnb.com/united-states/ma/boston/2022-12-21/data/listings.csv.gz',
+    # 'http://data.insideairbnb.com/united-states/ma/cambridge/2022-12-29/data/listings.csv.gz'
+    'https://data.insideairbnb.com/united-states/ma/boston/2024-06-22/data/listings.csv.gz',
+    'https://data.insideairbnb.com/united-states/ma/cambridge/2024-06-29/data/listings.csv.gz'
 ]
 
 # listing_links = listing_links.split('\n')
